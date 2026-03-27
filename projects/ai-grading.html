@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind Lab | AI 自动阅卷</title>
+  <meta name="description" content="Mind Lab AI 自动阅卷演示页面。" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/projects.css" />
+</head>
+<body>
+  <div class="project-shell">
+    <header class="project-header">
+      <a class="project-back" href="../software/">返回软件页</a>
+      <div class="brand-block">
+        <span class="brand-kicker">Mind Lab 软件</span>
+        <span class="brand-name">AI 自动阅卷</span>
+      </div>
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="../software/">软件</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section direct-demo-section">
+        <div class="demo-shell">
+          <div class="app-container">
+            <aside class="sidebar">
+              <div class="sidebar-header">
+                <div class="sidebar-logo">
+                  <div class="sidebar-logo-icon">AI</div>
+                  <span>Mind Lab · AI 自动阅卷</span>
+                </div>
+              </div>
+              <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                  <a href="#judge" class="sidebar-menu-link active" data-panel="judge-panel">
+                    <span class="sidebar-menu-icon">G</span>
+                    <span>阅卷批改</span>
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="#guide" class="sidebar-menu-link" data-panel="guide-panel">
+                    <span class="sidebar-menu-icon">i</span>
+                    <span>使用说明</span>
+                  </a>
+                </li>
+                <li class="sidebar-menu-item bottom-item">
+                  <a href="#about" class="sidebar-menu-link" data-panel="about-panel">
+                    <span class="sidebar-menu-icon">?</span>
+                    <span>关于系统</span>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+
+            <div class="main-content">
+              <section id="judge-panel" class="content-panel active">
+                <div class="content-header">
+                  <h1 class="content-title">AI 自动阅卷与批改</h1>
+                  <p class="content-desc">上传学生答题卡图片，填写题目文本与标准答案，通过实验室后端代理接口完成智能阅卷流程。</p>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">
+                      批改参数配置
+                      <span class="card-tag">阅卷配置</span>
+                    </h2>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label required" for="judge-question-text">题目文本</label>
+                    <textarea id="judge-question-text" class="form-control" placeholder="例如：33+33=？"></textarea>
+                    <p class="form-hint">输入需要批改的题目完整文本。</p>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label required" for="judge-solution-text">标准答案与解析</label>
+                    <textarea id="judge-solution-text" class="form-control" placeholder="示例：&#10;【标准答案】66&#10;【解析】33+33=66。"></textarea>
+                    <p class="form-hint">输入标准答案和详细解析，用于 AI 对比批改。</p>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label class="form-label required" for="student-image">学生答题卡图片</label>
+                      <div class="file-control">
+                        <input id="student-image" class="file-input" type="file" accept="image/*" />
+                        <label class="file-btn" for="student-image">
+                          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                          <span>选择图片</span>
+                        </label>
+                        <span class="file-name" id="student-image-name">未选择文件</span>
+                        <button type="button" class="file-clear" id="student-image-clear" style="display:none;" title="清除文件">×</button>
+                      </div>
+                      <p class="form-hint">拍照或扫描后的图片均可，目前仅支持单张上传。</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="question-image">题目原图（可选）</label>
+                      <div class="file-control">
+                        <input id="question-image" class="file-input" type="file" accept="image/*" />
+                        <label class="file-btn" for="question-image">
+                          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                          <span>选择图片</span>
+                        </label>
+                        <span class="file-name" id="question-image-name">未选择文件</span>
+                        <button type="button" class="file-clear" id="question-image-clear" style="display:none;" title="清除文件">×</button>
+                      </div>
+                      <p class="form-hint">如试卷含配图或版面信息，可一并上传辅助理解。</p>
+                    </div>
+                  </div>
+
+                  <div class="btn-group">
+                    <p class="status-text" id="judge-status"></p>
+                    <button class="btn btn-primary" id="judge-btn" type="button">
+                      <span>提交批改</span>
+                    </button>
+                  </div>
+
+                  <p class="error-text" id="judge-error"></p>
+
+                  <div class="result-panel">
+                    <div class="result-header">
+                      <span class="result-title">批改结果</span>
+                      <span class="result-meta" id="judge-meta">尚未批改</span>
+                    </div>
+                    <div class="result-content" id="judge-content">在左侧填写题目与标准答案、上传答题卡图片后，点击“提交批改”，结果会显示在这里。</div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="guide-panel" class="content-panel">
+                <div class="content-header">
+                  <h1 class="content-title">使用说明</h1>
+                  <p class="content-desc">这里说明演示系统的异步阅卷流程，以及各输入项在批改任务中的作用。</p>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">操作流程</h2>
+                  </div>
+                  <ol class="clean-list">
+                    <li>向阅卷接口提交题目文本、标准答案和图片输入。</li>
+                    <li>从后端服务获得任务编号。</li>
+                    <li>轮询结果接口，直到任务完成或失败。</li>
+                    <li>展示每道小题的得分、正误状态与评语。</li>
+                  </ol>
+                </div>
+              </section>
+
+              <section id="about-panel" class="content-panel">
+                <div class="content-header">
+                  <h1 class="content-title">关于系统</h1>
+                  <p class="content-desc">该演示是一个轻量化研究前端，用于展示基于图片的异步 AI 阅卷流程。</p>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">说明</h2>
+                  </div>
+                  <ul class="clean-list">
+                    <li>提交接口： <code>../api/frontend/judge/submit</code></li>
+                    <li>结果接口： <code>../api/frontend/judge/result/{task_id}</code></li>
+                    <li>后续可继续扩展批量阅卷、历史记录和教师复核等能力。</li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const menuLinks = document.querySelectorAll('.sidebar-menu-link');
+    const contentPanels = document.querySelectorAll('.content-panel');
+    const apiBase = new URL('../api/frontend/', window.location.href);
+
+    function buildApiUrl(path) {
+      return new URL(path, apiBase).toString();
+    }
+
+    function activatePanel(panelId) {
+      menuLinks.forEach((link) => {
+        link.classList.toggle('active', link.dataset.panel === panelId);
+      });
+
+      contentPanels.forEach((panel) => {
+        panel.classList.toggle('active', panel.id === panelId);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const task = urlParams.get('task');
+      const initialPanel = task === 'guide' ? 'guide-panel' : task === 'about' ? 'about-panel' : 'judge-panel';
+      activatePanel(initialPanel);
+    });
+
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        activatePanel(link.dataset.panel);
+      });
+    });
+
+    function bindFileUi(inputEl, nameEl, clearBtn) {
+      function refresh() {
+        const file = inputEl.files && inputEl.files[0];
+        if (file) {
+          nameEl.textContent = file.name;
+          clearBtn.style.display = 'inline-flex';
+        } else {
+          nameEl.textContent = '未选择文件';
+          clearBtn.style.display = 'none';
+        }
+      }
+
+      inputEl.addEventListener('change', refresh);
+      clearBtn.addEventListener('click', () => {
+        inputEl.value = '';
+        refresh();
+      });
+      refresh();
+    }
+
+    function fileToDataUrl(file) {
+      return new Promise((resolve, reject) => {
+        if (!file) {
+          resolve(null);
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = (event) => reject(event);
+        reader.readAsDataURL(file);
+      });
+    }
+
+    const studentImageInput = document.getElementById('student-image');
+    const studentImageName = document.getElementById('student-image-name');
+    const studentImageClear = document.getElementById('student-image-clear');
+    const questionImageInput = document.getElementById('question-image');
+    const questionImageName = document.getElementById('question-image-name');
+    const questionImageClear = document.getElementById('question-image-clear');
+
+    bindFileUi(studentImageInput, studentImageName, studentImageClear);
+    bindFileUi(questionImageInput, questionImageName, questionImageClear);
+
+    const judgeBtn = document.getElementById('judge-btn');
+    const judgeStatus = document.getElementById('judge-status');
+    const judgeError = document.getElementById('judge-error');
+    const judgeMeta = document.getElementById('judge-meta');
+    const judgeContent = document.getElementById('judge-content');
+
+    async function callJudgeService() {
+      const questionText = document.getElementById('judge-question-text').value.trim();
+      const solutionText = document.getElementById('judge-solution-text').value.trim();
+      const studentFile = studentImageInput.files[0];
+      const questionFile = questionImageInput.files[0];
+
+      if (!questionText || !solutionText) {
+        judgeError.textContent = '请填写题目文本和标准答案与解析。';
+        return;
+      }
+
+      if (!studentFile) {
+        judgeError.textContent = '请上传学生答题卡图片。';
+        return;
+      }
+
+      judgeError.textContent = '';
+
+      try {
+        judgeBtn.disabled = true;
+        judgeStatus.textContent = '正在上传图片并提交阅卷任务...';
+        judgeMeta.textContent = '阅卷中...';
+        judgeMeta.className = 'result-meta';
+
+        const [studentUrl, questionUrl] = await Promise.all([
+          fileToDataUrl(studentFile),
+          fileToDataUrl(questionFile)
+        ]);
+
+        const payload = {
+          question_text: questionText,
+          solution_text: solutionText,
+          student_img: studentUrl,
+          question_img: questionUrl ? [questionUrl] : null
+        };
+
+        const submitResp = await fetch(buildApiUrl('judge/submit'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const submitText = await submitResp.text();
+        if (!submitResp.ok) {
+          throw new Error(`服务返回错误（HTTP ${submitResp.status}）：\n${submitText}`);
+        }
+
+        let submitData;
+        try {
+          submitData = JSON.parse(submitText);
+        } catch (error) {
+          throw new Error(`提交接口返回的内容不是有效的 JSON：\n${submitText}`);
+        }
+
+        const taskId = submitData.task_id;
+        if (!taskId) {
+          throw new Error('阅卷服务未返回 task_id。');
+        }
+
+        judgeStatus.textContent = '任务已提交，正在等待阅卷结果...';
+        const start = Date.now();
+        const timeoutMs = 20 * 60 * 1000;
+        let resultData = null;
+
+        while (true) {
+          if (Date.now() - start > timeoutMs) {
+            throw new Error('阅卷任务等待超时（超过 20 分钟）。');
+          }
+
+          const resultResp = await fetch(buildApiUrl(`judge/result/${taskId}`), { method: 'GET' });
+          const resultText = await resultResp.text();
+          if (!resultResp.ok) {
+            throw new Error(`查询阅卷结果失败（HTTP ${resultResp.status}）：\n${resultText}`);
+          }
+
+          let resultObj;
+          try {
+            resultObj = JSON.parse(resultText);
+          } catch (error) {
+            throw new Error(`结果接口返回的内容不是有效的 JSON：\n${resultText}`);
+          }
+
+          if (resultObj.status === 'running') {
+            judgeMeta.textContent = '阅卷中...';
+            await new Promise((resolve) => setTimeout(resolve, 1500));
+            continue;
+          }
+
+          if (resultObj.status === 'error') {
+            throw new Error(resultObj.error || '未知服务错误');
+          }
+
+          resultData = resultObj;
+          break;
+        }
+
+        const data = resultData.result || {};
+        const detail = data.data || {};
+        const total = detail.total_score_obtained;
+        const maxScore = detail.max_score;
+        const questions = Array.isArray(detail.questions) ? detail.questions : [];
+
+        if (typeof total === 'number' && typeof maxScore === 'number') {
+          judgeMeta.textContent = `总分 ${total} / ${maxScore}`;
+          judgeMeta.className = 'result-meta success';
+        } else {
+          judgeMeta.textContent = data.status || '已完成';
+          judgeMeta.className = 'result-meta';
+        }
+
+        let output = '';
+        if (questions.length > 0) {
+          questions.forEach((question, index) => {
+            output += `Sub-question ${index + 1} (ID: ${question.sub_question_id || '-'})\n`;
+            output += `Score: ${question.score_obtained}/${question.max_score}  ${question.is_correct ? 'Correct' : 'Incorrect'}\n`;
+            output += `Comment: ${question.reasoning || ''}\n\n`;
+          });
+        } else {
+          output = JSON.stringify(data, null, 2);
+        }
+
+        judgeContent.textContent = output;
+        judgeStatus.textContent = '阅卷完成。';
+      } catch (error) {
+        console.error(error);
+        judgeError.textContent = `阅卷失败：\n${error.message}`;
+        judgeMeta.textContent = '失败';
+        judgeMeta.className = 'result-meta error';
+        judgeStatus.textContent = '请求失败。';
+      } finally {
+        judgeBtn.disabled = false;
+      }
+    }
+
+    judgeBtn.addEventListener('click', callJudgeService);
+  </script>
+</body>
+</html>
+
+
+

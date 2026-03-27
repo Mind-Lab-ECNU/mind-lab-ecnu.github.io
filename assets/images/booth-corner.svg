@@ -1,0 +1,16 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="36" fill="#F5EFE6"/>
+  <rect x="70" y="70" width="1060" height="760" rx="30" fill="#FFFFFF" stroke="#E6DCCD" stroke-width="6"/>
+  <rect x="110" y="110" width="980" height="160" rx="28" fill="#11483F"/>
+  <rect x="170" y="340" width="860" height="360" rx="26" fill="#F7F1E7"/>
+  <rect x="214" y="382" width="220" height="230" rx="20" fill="#FFFFFF"/>
+  <rect x="490" y="382" width="220" height="230" rx="20" fill="#FFFFFF"/>
+  <rect x="766" y="382" width="220" height="230" rx="20" fill="#FFFFFF"/>
+  <rect x="238" y="654" width="724" height="28" rx="14" fill="#D4834F" opacity="0.82"/>
+  <circle cx="956" cy="744" r="44" fill="#11483F" opacity="0.12"/>
+  <circle cx="860" cy="744" r="44" fill="#11483F" opacity="0.22"/>
+  <text x="154" y="186" fill="#FFFDF9" font-family="Arial, Microsoft YaHei, sans-serif" font-size="52" font-weight="700">Booth Corner Placeholder</text>
+  <text x="250" y="520" fill="#11483F" font-family="Arial, Microsoft YaHei, sans-serif" font-size="26">Photo Slot A</text>
+  <text x="526" y="520" fill="#27405A" font-family="Arial, Microsoft YaHei, sans-serif" font-size="26">Photo Slot B</text>
+  <text x="802" y="520" fill="#A55D31" font-family="Arial, Microsoft YaHei, sans-serif" font-size="26">Photo Slot C</text>
+</svg>

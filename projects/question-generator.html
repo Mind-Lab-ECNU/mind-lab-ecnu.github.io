@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind Lab | 智能题目生成</title>
+  <meta name="description" content="Mind Lab 智能题目生成演示页面。" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/projects.css" />
+</head>
+<body>
+  <div class="project-shell">
+    <header class="project-header">
+      <a class="project-back" href="../software/">返回软件页</a>
+      <div class="brand-block">
+        <span class="brand-kicker">Mind Lab 软件</span>
+        <span class="brand-name">智能题目生成</span>
+      </div>
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="../software/">软件</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section direct-demo-section">
+        <div class="demo-shell">
+          <div class="app-container">
+            <aside class="sidebar">
+              <div class="sidebar-header">
+                <div class="sidebar-logo">
+                  <div class="sidebar-logo-icon">AI</div>
+                  <span>Mind Lab · 智能题目生成</span>
+                </div>
+              </div>
+              <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                  <a href="#generate" class="sidebar-menu-link active" data-panel="generate-panel">
+                    <span class="sidebar-menu-icon">Q</span>
+                    <span>题目生成</span>
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="#guide" class="sidebar-menu-link" data-panel="guide-panel">
+                    <span class="sidebar-menu-icon">i</span>
+                    <span>使用说明</span>
+                  </a>
+                </li>
+                <li class="sidebar-menu-item bottom-item">
+                  <a href="#about" class="sidebar-menu-link" data-panel="about-panel">
+                    <span class="sidebar-menu-icon">?</span>
+                    <span>关于系统</span>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+
+            <div class="main-content">
+              <section id="generate-panel" class="content-panel active">
+                <div class="content-header">
+                  <h1 class="content-title">智能题目生成系统</h1>
+                  <p class="content-desc">通过实验室后端代理接口，按年级、难度、知识点、题型与核心素养维度生成数学题目。</p>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">
+                      生成参数配置
+                      <span class="card-tag">基础配置</span>
+                    </h2>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label class="form-label required" for="grade">学生年级</label>
+                      <input id="grade" class="form-control" type="text" value="四年级下" placeholder="如：四年级下" />
+                      <p class="form-hint">示例：四年级下、六年级上、初一等</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label required" for="difficulty">题目难度</label>
+                      <select id="difficulty" class="form-control">
+                        <option value="易">易</option>
+                        <option value="中">中</option>
+                        <option value="难">难</option>
+                      </select>
+                      <p class="form-hint">选择题目的难度等级。</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label required" for="knowledge">知识点</label>
+                      <input id="knowledge" class="form-control" type="text" value="实际应用" placeholder="如：分数加减" />
+                      <p class="form-hint">例如：分数加减、比例应用、函数图像等</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label required" for="question-type">题型</label>
+                      <select id="question-type" class="form-control">
+                        <option value="选择题">选择题</option>
+                        <option value="填空题" selected>填空题</option>
+                        <option value="判断题">判断题</option>
+                        <option value="简答题">简答题</option>
+                      </select>
+                      <p class="form-hint">选择需要生成的题目类型。</p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">核心素养（多选）</label>
+                    <div class="pill-group" id="competence-row">
+                      <button type="button" class="pill selected" data-val="几何直观">几何直观</button>
+                      <button type="button" class="pill" data-val="基础能力">基础能力</button>
+                      <button type="button" class="pill" data-val="空间观念">空间观念</button>
+                      <button type="button" class="pill" data-val="应用意识">应用意识</button>
+                      <button type="button" class="pill" data-val="量感">量感</button>
+                      <button type="button" class="pill" data-val="数感">数感</button>
+                      <button type="button" class="pill" data-val="推理意识">推理意识</button>
+                      <button type="button" class="pill" data-val="符号意识">符号意识</button>
+                      <button type="button" class="pill" data-val="创新意识">创新意识</button>
+                      <button type="button" class="pill" data-val="运算能力">运算能力</button>
+                      <button type="button" class="pill" data-val="数据意识">数据意识</button>
+                      <button type="button" class="pill" data-val="模型意识">模型意识</button>
+                      <button type="button" class="pill" data-val="模型观念">模型观念</button>
+                      <button type="button" class="pill" data-val="推理能力">推理能力</button>
+                      <button type="button" class="pill" data-val="抽象能力">抽象能力</button>
+                      <button type="button" class="pill" data-val="数据观念">数据观念</button>
+                    </div>
+                    <p class="form-hint">可多选，仅能从上述核心素养选项中选择。</p>
+                  </div>
+
+                  <div class="form-group" style="max-width: 280px;">
+                    <label class="form-label" for="num-questions">生成题目数量</label>
+                    <input id="num-questions" class="form-control" type="number" min="1" max="10" value="1" />
+                    <p class="form-hint">目前建议 1 道，便于调试。</p>
+                  </div>
+
+                  <div class="btn-group">
+                    <p class="status-text" id="generate-status"></p>
+                    <button class="btn btn-primary" id="generate-btn" type="button">
+                      <span id="generate-btn-text">生成题目</span>
+                      <span id="generate-spinner" class="spinner" style="display: none;"></span>
+                    </button>
+                  </div>
+
+                  <p class="error-text" id="generate-error"></p>
+
+                  <div class="result-panel">
+                    <div class="result-header">
+                      <span class="result-title">生成结果</span>
+                      <span class="result-meta" id="generate-meta">待运行</span>
+                    </div>
+                    <div class="result-content" id="generate-content">在上方填写参数并点击“生成题目”，结果会展示在这里。</div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="guide-panel" class="content-panel">
+                <div class="content-header">
+                  <h1 class="content-title">使用说明</h1>
+                  <p class="content-desc">这里说明各输入项的用途，以及题目生成演示的请求流程。</p>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">操作流程</h2>
+                  </div>
+                  <ol class="clean-list">
+                    <li>填写年级、难度、知识点和题型。</li>
+                    <li>选择一个或多个核心素养维度作为生成目标。</li>
+                    <li>将请求提交到实验室后端代理接口。</li>
+                    <li>查看返回的摘要信息、题目正文与参考答案。</li>
+                  </ol>
+                </div>
+              </section>
+
+              <section id="about-panel" class="content-panel">
+                <div class="content-header">
+                  <h1 class="content-title">关于系统</h1>
+                  <p class="content-desc">该演示是一个轻量化研究前端，用于展示可控教育内容生成原型。</p>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">说明</h2>
+                  </div>
+                  <ul class="clean-list">
+                    <li>接口地址： <code>../api/frontend/generate-question</code></li>
+                    <li>前端会从多种可能的返回结构中提取题目正文与参考答案。</li>
+                    <li>后续可继续扩展导出、历史记录、多学科模板等功能。</li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const menuLinks = document.querySelectorAll('.sidebar-menu-link');
+    const contentPanels = document.querySelectorAll('.content-panel');
+    const competenceRow = document.getElementById('competence-row');
+    const apiBase = new URL('../api/frontend/', window.location.href);
+
+    function buildApiUrl(path) {
+      return new URL(path, apiBase).toString();
+    }
+
+    function activatePanel(panelId) {
+      menuLinks.forEach((link) => {
+        link.classList.toggle('active', link.dataset.panel === panelId);
+      });
+
+      contentPanels.forEach((panel) => {
+        panel.classList.toggle('active', panel.id === panelId);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const task = urlParams.get('task');
+      const initialPanel = task === 'guide' ? 'guide-panel' : task === 'about' ? 'about-panel' : 'generate-panel';
+      activatePanel(initialPanel);
+    });
+
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        activatePanel(link.dataset.panel);
+      });
+    });
+
+    competenceRow.addEventListener('click', (event) => {
+      const target = event.target;
+      if (target.classList.contains('pill')) {
+        target.classList.toggle('selected');
+      }
+    });
+
+    const generateBtn = document.getElementById('generate-btn');
+    const generateBtnText = document.getElementById('generate-btn-text');
+    const generateSpinner = document.getElementById('generate-spinner');
+    const generateStatus = document.getElementById('generate-status');
+    const generateError = document.getElementById('generate-error');
+    const generateResult = document.getElementById('generate-content');
+    const generateMeta = document.getElementById('generate-meta');
+
+    function getText(value) {
+      if (value === null || value === undefined) return '';
+      if (typeof value === 'string') return value.trim();
+      if (typeof value === 'number' || typeof value === 'boolean') return String(value);
+      return '';
+    }
+
+    const difficultyMap = {
+      Easy: '易',
+      Medium: '中',
+      Hard: '难',
+      易: '易',
+      中: '中',
+      难: '难'
+    };
+
+    const questionTypeMap = {
+      'Multiple Choice': '选择题',
+      'Fill in the Blank': '填空题',
+      'True or False': '判断题',
+      'Short Answer': '简答题',
+      '选择题': '选择题',
+      '填空题': '填空题',
+      '判断题': '判断题',
+      '简答题': '简答题'
+    };
+
+    const competenceMap = {
+      'Geometric intuition': '几何直观',
+      'Foundational skills': '基础能力',
+      'Spatial sense': '空间观念',
+      'Application awareness': '应用意识',
+      'Quantitative sense': '量感',
+      'Number sense': '数感',
+      'Reasoning awareness': '推理意识',
+      'Symbol awareness': '符号意识',
+      'Creativity': '创新意识',
+      'Computation': '运算能力',
+      'Data awareness': '数据意识',
+      'Modeling awareness': '模型意识',
+      'Modeling concepts': '模型观念',
+      'Reasoning ability': '推理能力',
+      'Abstraction': '抽象能力',
+      'Data concepts': '数据观念'
+    };
+
+    function normalizeDifficulty(value) {
+      return difficultyMap[value] || value;
+    }
+
+    function normalizeQuestionType(value) {
+      return questionTypeMap[value] || value;
+    }
+
+    function normalizeCompetence(value) {
+      return competenceMap[value] || value;
+    }
+    function pickGenerateSummary(data, payload) {
+      const input = (data && typeof data.input === 'object' && data.input) || {};
+      const outputQuestion = (data && typeof data.question === 'object' && data.question) || null;
+      const generated = Array.isArray(data?.generated_questions) ? data.generated_questions : [];
+      const firstGenerated = generated.length > 0 && typeof generated[0] === 'object' ? generated[0] : null;
+      const nestedGeneratedQuestion = firstGenerated && typeof firstGenerated.question === 'object'
+        ? firstGenerated.question
+        : null;
+
+      const grade = input.grade || payload.grade || '';
+      const knowledge = input.knowledge || input.knowledge_point || payload.knowledge_point || '';
+      const questionType = input.question_type || payload.question_type || '';
+      const difficulty = input.difficulty || payload.difficulty || '';
+      const compArr = Array.isArray(input.competence) && input.competence.length > 0
+        ? input.competence
+        : (Array.isArray(payload.competence) ? payload.competence : []);
+      const competence = compArr.length > 0 ? compArr.join('、') : '未指定';
+
+      const questionText =
+        getText(outputQuestion?.question) ||
+        getText(outputQuestion?.stem) ||
+        getText(outputQuestion?.question_text) ||
+        getText(data?.question) ||
+        getText(firstGenerated?.question) ||
+        getText(firstGenerated?.stem) ||
+        getText(firstGenerated?.question_text) ||
+        getText(nestedGeneratedQuestion?.question) ||
+        getText(nestedGeneratedQuestion?.stem) ||
+        getText(nestedGeneratedQuestion?.question_text);
+
+      const answerText =
+        getText(outputQuestion?.answer) ||
+        getText(outputQuestion?.reference_answer) ||
+        getText(outputQuestion?.standard_answer) ||
+        getText(outputQuestion?.final_answer) ||
+        getText(firstGenerated?.answer) ||
+        getText(firstGenerated?.reference_answer) ||
+        getText(firstGenerated?.standard_answer) ||
+        getText(nestedGeneratedQuestion?.answer) ||
+        getText(nestedGeneratedQuestion?.reference_answer) ||
+        getText(nestedGeneratedQuestion?.standard_answer);
+
+      return {
+        count: Number(payload.n) > 0 ? Number(payload.n) : 1,
+        grade,
+        knowledge,
+        questionType,
+        difficulty,
+        competence,
+        questionText,
+        answerText
+      };
+    }
+
+    async function callGenerateService() {
+      const grade = document.getElementById('grade').value.trim();
+      const difficulty = normalizeDifficulty(document.getElementById('difficulty').value);
+      const knowledge = document.getElementById('knowledge').value.trim();
+      const questionType = normalizeQuestionType(document.getElementById('question-type').value);
+      const numQuestions = parseInt(document.getElementById('num-questions').value.trim() || '1', 10);
+      const selectedPills = Array.from(competenceRow.querySelectorAll('.pill.selected'));
+      const competence = selectedPills.map((pill) => normalizeCompetence(pill.dataset.val));
+
+      if (!grade || !knowledge) {
+        generateError.textContent = '请至少填写年级与知识点。';
+        return;
+      }
+
+      generateError.textContent = '';
+
+      const payload = {
+        grade,
+        knowledge_point: knowledge,
+        question_type: questionType,
+        difficulty,
+        competence,
+        n: Number.isNaN(numQuestions) || numQuestions <= 0 ? 1 : numQuestions,
+        use_rag: true,
+        rag_mode: 'writer',
+        evaluation_mode: 'binary',
+        include_workflow: false
+      };
+
+      try {
+        generateBtn.disabled = true;
+        generateSpinner.style.display = 'inline-block';
+        generateBtnText.textContent = '生成中...';
+        generateStatus.textContent = '正在生成题目，首次请求可能需要 1 到 3 分钟。';
+        generateMeta.textContent = '请求中';
+        generateMeta.className = 'result-meta';
+
+        const response = await fetch(buildApiUrl('generate-question'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const text = await response.text();
+        if (!response.ok) {
+          throw new Error(`服务返回错误（HTTP ${response.status}）：\n${text}`);
+        }
+
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (error) {
+          throw new Error(`服务返回的内容不是有效的 JSON：\n${text}`);
+        }
+
+        const summary = pickGenerateSummary(data, payload);
+        if (!summary.questionText) {
+          throw new Error('请求成功，但返回数据中没有可展示的题目内容。');
+        }
+
+        generateMeta.textContent = `${summary.count} 道题`;
+        generateMeta.className = 'result-meta success';
+        generateResult.textContent =
+          `已为 ${summary.grade} 生成 ${summary.count} 道${summary.questionType}。\n` +
+          `知识点：${summary.knowledge}\n` +
+          `难度： ${summary.difficulty}\n` +
+          `核心素养：${summary.competence}\n\n` +
+          `题目：\n${summary.questionText}\n\n` +
+          `参考答案：\n${summary.answerText || '(not returned)'}`;
+        generateStatus.textContent = '题目生成成功。';
+      } catch (error) {
+        console.error(error);
+        generateError.textContent = `题目生成失败：\n${error.message}`;
+        generateMeta.textContent = '失败';
+        generateMeta.className = 'result-meta error';
+        generateStatus.textContent = '请求失败。';
+      } finally {
+        generateBtn.disabled = false;
+        generateSpinner.style.display = 'none';
+        generateBtnText.textContent = '生成题目';
+      }
+    }
+
+    generateBtn.addEventListener('click', callGenerateService);
+  </script>
+</body>
+</html>
+
+
+
+

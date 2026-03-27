@@ -1,0 +1,77 @@
+---
+layout: default
+title: People
+permalink: /people/
+description: "People at ECNU Mind Lab."
+---
+
+<section class="section">
+  <div class="page-header-block" data-reveal>
+    <h1 class="page-title">People</h1>
+    <p class="page-subtitle">The people page introduces principal investigators, research staff, and student researchers working across the lab's ongoing projects.</p>
+  </div>
+
+  <section class="person-section" data-reveal>
+    <h2 class="person-section-title">Principal Investigator</h2>
+    <div class="people-grid">
+      {% for person in site.data.people.principal_investigator %}
+      <article class="person-card featured">
+        <img src="{{ person.image | relative_url }}" alt="{{ person.name }} portrait" />
+        <div>
+          <div class="person-name">{{ person.name }}</div>
+          <div class="person-links">
+            {% for link in person.links %}
+            <a href="{{ link.url }}"{% if link.target %} target="{{ link.target }}" rel="noreferrer"{% endif %}>{{ link.label }}</a>
+            {% endfor %}
+          </div>
+          <p class="person-role">{{ person.role }}</p>
+          <p class="person-meta">{{ person.affiliation }}</p>
+          <p class="person-note">{{ person.note }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="person-section" data-reveal>
+    <h2 class="person-section-title">Administrative &amp; Research Staff</h2>
+    <div class="people-grid">
+      {% for person in site.data.people.staff %}
+      <article class="person-card">
+        <img src="{{ person.image | relative_url }}" alt="{{ person.name }} portrait" />
+        <div>
+          <div class="person-name">{{ person.name }}</div>
+          <div class="person-links">
+            {% for link in person.links %}
+            <a href="{{ link.url }}"{% if link.target %} target="{{ link.target }}" rel="noreferrer"{% endif %}>{{ link.label }}</a>
+            {% endfor %}
+          </div>
+          <p class="person-role">{{ person.role }}</p>
+          <p class="person-meta">{{ person.meta }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="person-section" data-reveal>
+    <h2 class="person-section-title">PhD Students</h2>
+    <div class="people-grid">
+      {% for person in site.data.people.phd_students %}
+      <article class="person-card">
+        <img src="{{ person.image | relative_url }}" alt="{{ person.name }} portrait" />
+        <div>
+          <div class="person-name">{{ person.name }}</div>
+          <div class="person-links">
+            {% for link in person.links %}
+            <a href="{{ link.url }}"{% if link.target %} target="{{ link.target }}" rel="noreferrer"{% endif %}>{{ link.label }}</a>
+            {% endfor %}
+          </div>
+          <p class="person-role">{{ person.role }}</p>
+          <p class="person-meta">{{ person.meta }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</section>

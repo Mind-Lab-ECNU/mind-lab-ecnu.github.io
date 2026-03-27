@@ -1,0 +1,19 @@
+﻿title: ECNU Mind Lab
+description: "ECNU Mind Lab - AI, education, cognition, and human-centered computing."
+url: ""
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: default

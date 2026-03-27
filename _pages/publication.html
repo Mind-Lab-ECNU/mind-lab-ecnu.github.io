@@ -1,0 +1,43 @@
+---
+layout: default
+title: Publication
+permalink: /publication/
+description: "All publications from ECNU Mind Lab."
+extra_js: /assets/js/site-pages.js
+---
+
+<section class="section">
+  <div class="page-header-block" data-reveal>
+    <h1 class="page-title">Publication</h1>
+    <p class="page-subtitle">Browse all papers from ECNU Mind Lab. Use the search box to filter by title, authors, venue, or topic keywords.</p>
+  </div>
+
+  <input id="paper-search" class="search-bar" type="search" placeholder="Search publications by title, author, venue, or keyword" />
+
+  <div class="publication-list">
+    {% for pub in site.data.publications %}
+    <article class="publication-card" data-search="{{ pub.search }}">
+      <div class="publication-media">
+        <img src="{{ pub.image | relative_url }}" alt="Publication figure for {{ pub.title }}" />
+      </div>
+      <div>
+        <h3 class="publication-title">{{ pub.title }}</h3>
+        <p class="publication-authors">{{ pub.authors }}</p>
+        <p class="publication-venue">{{ pub.venue }}</p>
+        <div class="publication-actions">
+          <a class="pub-action" href="{{ pub.arxiv }}" target="_blank" rel="noreferrer">ARXIV</a>
+          <button class="pub-action pub-bib-toggle" type="button" aria-expanded="false">BIB</button>
+        </div>
+        <div class="pub-bib-panel">
+          <pre>{{ pub.bib }}</pre>
+          <div class="pub-bib-footer">
+            <a class="pub-action" href="{{ pub.github }}" target="_blank" rel="noreferrer">GitHub Page</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <p id="search-empty" class="search-empty">No publication matches the current search.</p>
+</section>

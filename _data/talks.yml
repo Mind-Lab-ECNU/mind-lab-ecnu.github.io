@@ -1,0 +1,20 @@
+upcoming: []
+
+past:
+  - title: "Spatial Intelligence in Vision-Language Models: What It Is, What Works, and What Comes Next"
+    speaker: "Disheng Liu, PhD Candidate"
+    affiliation: "Case Western Reserve University"
+    date: "December 30, 2025 · 11:00–12:00 · Online Seminar"
+    host: "Huan Wang"
+    abstract: "This talk introduced a systematic overview of spatial intelligence in vision-language models, discussing limitations, evaluation protocols, and opportunities for embodied and educational scenarios."
+    image: assets/images/person-placeholder.svg
+    homepage: https://example.com
+
+  - title: "Pursuing the Nature of Intelligence"
+    speaker: "Yi Ma, Chair Professor"
+    affiliation: "School of Data Science, Hong Kong University"
+    date: "October 14, 2025 · 15:30–17:00 · ECNU Campus Seminar"
+    host: "Huan Wang, Yandong Wen"
+    abstract: "The talk explored multiple levels and mechanisms of intelligence from scientific, mathematical, and computational perspectives, connecting foundational theory with future AI systems research."
+    image: assets/images/person-placeholder.svg
+    homepage: https://example.com

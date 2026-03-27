@@ -1,0 +1,23 @@
+<svg width="1600" height="960" viewBox="0 0 1600 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="960" rx="40" fill="#F7F1E7"/>
+  <rect x="70" y="72" width="1460" height="816" rx="36" fill="#FFFDF9" stroke="#E5DBCC" stroke-width="8"/>
+  <rect x="116" y="126" width="1368" height="170" rx="28" fill="#11483F"/>
+  <rect x="200" y="188" width="420" height="48" rx="24" fill="#D4834F"/>
+  <rect x="200" y="260" width="284" height="20" rx="10" fill="#DDE9E5"/>
+  <rect x="1056" y="170" width="252" height="84" rx="20" fill="#FFF4E9" opacity="0.95"/>
+  <rect x="160" y="356" width="408" height="360" rx="28" fill="#EAF4F1"/>
+  <rect x="608" y="356" width="360" height="360" rx="28" fill="#F8EEE4"/>
+  <rect x="1008" y="356" width="432" height="360" rx="28" fill="#EDF2FA"/>
+  <rect x="222" y="420" width="286" height="150" rx="18" fill="#FFFFFF"/>
+  <rect x="674" y="416" width="228" height="166" rx="18" fill="#FFFFFF"/>
+  <rect x="1084" y="412" width="280" height="174" rx="18" fill="#FFFFFF"/>
+  <rect x="172" y="760" width="1256" height="56" rx="28" fill="#1B6E5E" opacity="0.9"/>
+  <circle cx="1220" cy="820" r="38" fill="#D4834F" opacity="0.28"/>
+  <circle cx="1314" cy="820" r="38" fill="#D4834F" opacity="0.46"/>
+  <circle cx="1408" cy="820" r="38" fill="#D4834F" opacity="0.68"/>
+  <text x="200" y="222" fill="#FFFDF9" font-family="Arial, Microsoft YaHei, sans-serif" font-size="68" font-weight="700">Mind Lab Booth</text>
+  <text x="1094" y="225" fill="#11483F" font-family="Arial, Microsoft YaHei, sans-serif" font-size="32" font-weight="700">Placeholder Main Visual</text>
+  <text x="224" y="628" fill="#11483F" font-family="Arial, Microsoft YaHei, sans-serif" font-size="32">Replace with Lab Hero Image</text>
+  <text x="670" y="630" fill="#A55D31" font-family="Arial, Microsoft YaHei, sans-serif" font-size="30">Project Posters</text>
+  <text x="1090" y="634" fill="#27405A" font-family="Arial, Microsoft YaHei, sans-serif" font-size="30">Team / Space / Event</text>
+</svg>

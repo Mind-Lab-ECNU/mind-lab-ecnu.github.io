@@ -1,0 +1,23 @@
+﻿---
+layout: default
+title: Software
+permalink: /software/
+description: "Research software and demo systems at ECNU Mind Lab."
+---
+
+<section class="section">
+  <div class="page-header-block" data-reveal>
+    <h1 class="page-title">软件</h1>
+    <p class="page-subtitle">ECNU Mind Lab 的研究原型、演示系统与预留功能页面。</p>
+  </div>
+
+  <div class="software-grid">
+    {% for item in site.data.software %}
+    <article class="software-card" data-reveal>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <a class="button {{ item.type }}" href="{{ item.url | relative_url }}">{{ item.button }}</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>

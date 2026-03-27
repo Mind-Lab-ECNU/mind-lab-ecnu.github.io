@@ -1,0 +1,29 @@
+﻿- title: 智能题目生成
+  description: "面向数学教学场景的题目生成演示，支持通过实验室后端代理接口按参数生成题目。"
+  url: "/projects/question-generator.html?task=generate"
+  button: 进入演示
+  type: primary
+
+- title: AI 自动阅卷
+  description: "支持上传答题图片、提交标准答案并异步获取批改结果的智能阅卷演示。"
+  url: "/projects/ai-grading.html?task=judge"
+  button: 进入演示
+  type: primary
+
+- title: 德育模型
+  description: "预留的软件展示页面，后续可补充真实功能与介绍内容。"
+  url: "/projects/moral-model.html"
+  button: 打开页面
+  type: primary
+
+- title: 智能绘本
+  description: "预留的软件展示页面，后续可补充真实功能与介绍内容。"
+  url: "/projects/smart-picture-book.html"
+  button: 打开页面
+  type: primary
+
+- title: OCR 手写体识别
+  description: "预留的软件展示页面，后续可补充真实功能与介绍内容。"
+  url: "/projects/ocr-handwriting.html"
+  button: 打开页面
+  type: secondary

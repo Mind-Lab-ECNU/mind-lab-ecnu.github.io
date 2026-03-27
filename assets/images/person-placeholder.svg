@@ -1,0 +1,9 @@
+<svg width="720" height="900" viewBox="0 0 720 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="900" rx="36" fill="#0E1826"/>
+  <circle cx="360" cy="286" r="146" fill="#1F7F6A" fill-opacity="0.34"/>
+  <circle cx="360" cy="266" r="110" fill="#7EE3CD" fill-opacity="0.24"/>
+  <path d="M212 748C212 634.818 303.818 543 417 543H303C416.182 543 508 634.818 508 748V796H212V748Z" fill="#1A2A3C"/>
+  <path d="M266 382C266 321.249 315.249 272 376 272H344C404.751 272 454 321.249 454 382V430C454 490.751 404.751 540 344 540H376C315.249 540 266 490.751 266 430V382Z" fill="#D2E9FF"/>
+  <rect x="84" y="68" width="552" height="70" rx="18" fill="#132232"/>
+  <text x="153" y="113" fill="#F5FBFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">Portrait Placeholder</text>
+</svg>

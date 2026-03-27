@@ -1,0 +1,79 @@
+- title: "Competency-Aware Question Generation for Mathematics Learning Workflows"
+  authors: "Y. Liu, Z. Chen, H. Wang, and the ECNU Mind Lab Team"
+  venue: "Under review for an educational technology venue · arXiv preprint"
+  image: assets/images/paper-placeholder.svg
+  search: "question generation mathematics learning educational ai liu chen wang arxiv"
+  featured: true
+  arxiv: https://arxiv.org
+  github: https://github.com
+  bib: |
+    @article{liu2026questiongen,
+      title   = {Competency-Aware Question Generation for Mathematics Learning Workflows},
+      author  = {Liu, Y. and Chen, Z. and Wang, H.},
+      journal = {arXiv preprint arXiv:xxxx.xxxxx},
+      year    = {2026}
+    }
+
+- title: "Multimodal AI Grading for Image-Based Student Responses"
+  authors: "X. Lin, S. Xu, C. Yang, H. Wang"
+  venue: "Submitted to a learning analytics venue · arXiv preprint"
+  image: assets/images/paper-placeholder.svg
+  search: "ai grading multimodal assessment lin xu yang wang arxiv"
+  featured: true
+  arxiv: https://arxiv.org
+  github: https://github.com
+  bib: |
+    @article{lin2026aigrading,
+      title   = {Multimodal AI Grading for Image-Based Student Responses},
+      author  = {Lin, X. and Xu, S. and Yang, C. and Wang, H.},
+      journal = {arXiv preprint arXiv:xxxx.xxxxx},
+      year    = {2026}
+    }
+
+- title: "Designing Research Software Interfaces for Academic Demonstration and Deployment"
+  authors: "J. Zhao, Y. Li, H. Wang"
+  venue: "Target journal: International Journal of Human-Computer Studies"
+  image: assets/images/paper-placeholder.svg
+  search: "human centered research software interfaces zhao li wang deployment"
+  featured: true
+  arxiv: https://arxiv.org
+  github: https://github.com
+  bib: |
+    @article{zhao2026researchsoftware,
+      title   = {Designing Research Software Interfaces for Academic Demonstration and Deployment},
+      author  = {Zhao, J. and Li, Y. and Wang, H.},
+      journal = {Preprint},
+      year    = {2026}
+    }
+
+- title: "Structured Language Models for Moral Education Scenario Understanding"
+  authors: "M. Chen, Y. Liu, H. Wang"
+  venue: "Working paper · arXiv draft in preparation"
+  image: assets/images/paper-placeholder.svg
+  search: "moral education model language alignment policy education chen liu"
+  featured: false
+  arxiv: https://arxiv.org
+  github: https://github.com
+  bib: |
+    @article{chen2026moraled,
+      title   = {Structured Language Models for Moral Education Scenario Understanding},
+      author  = {Chen, M. and Liu, Y. and Wang, H.},
+      journal = {Working paper},
+      year    = {2026}
+    }
+
+- title: "OCR Handwriting Recognition for Educational Documents and Student Writing"
+  authors: "Q. Zhang, S. Xu, H. Wang"
+  venue: "Preprint for document intelligence and educational computing"
+  image: assets/images/paper-placeholder.svg
+  search: "ocr handwriting recognition multimodal document understanding zhang xu"
+  featured: false
+  arxiv: https://arxiv.org
+  github: https://github.com
+  bib: |
+    @article{zhang2026ocrhandwriting,
+      title   = {OCR Handwriting Recognition for Educational Documents and Student Writing},
+      author  = {Zhang, Q. and Xu, S. and Wang, H.},
+      journal = {Preprint},
+      year    = {2026}
+    }

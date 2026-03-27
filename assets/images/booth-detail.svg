@@ -1,0 +1,18 @@
+<svg width="1400" height="980" viewBox="0 0 1400 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="980" rx="40" fill="#F7F2EA"/>
+  <rect x="74" y="74" width="1252" height="832" rx="34" fill="#FFFFFF" stroke="#E7DCCF" stroke-width="6"/>
+  <rect x="126" y="128" width="1148" height="126" rx="24" fill="#11483F"/>
+  <rect x="126" y="308" width="364" height="502" rx="28" fill="#EDF2FA"/>
+  <rect x="518" y="308" width="364" height="502" rx="28" fill="#EAF4F1"/>
+  <rect x="910" y="308" width="364" height="502" rx="28" fill="#FFF3E8"/>
+  <rect x="174" y="356" width="268" height="164" rx="18" fill="#FFFFFF"/>
+  <rect x="566" y="356" width="268" height="164" rx="18" fill="#FFFFFF"/>
+  <rect x="958" y="356" width="268" height="164" rx="18" fill="#FFFFFF"/>
+  <rect x="174" y="560" width="268" height="186" rx="18" fill="#FFFFFF" opacity="0.78"/>
+  <rect x="566" y="560" width="268" height="186" rx="18" fill="#FFFFFF" opacity="0.78"/>
+  <rect x="958" y="560" width="268" height="186" rx="18" fill="#FFFFFF" opacity="0.78"/>
+  <text x="164" y="204" fill="#FFFDF9" font-family="Arial, Microsoft YaHei, sans-serif" font-size="58" font-weight="700">Platform &amp; Facility Placeholder</text>
+  <text x="188" y="642" fill="#27405A" font-family="Arial, Microsoft YaHei, sans-serif" font-size="28">Device Zone</text>
+  <text x="580" y="642" fill="#11483F" font-family="Arial, Microsoft YaHei, sans-serif" font-size="28">Workflow Zone</text>
+  <text x="972" y="642" fill="#A55D31" font-family="Arial, Microsoft YaHei, sans-serif" font-size="28">Space Zone</text>
+</svg>

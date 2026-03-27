@@ -1,0 +1,19 @@
+- date: "2026/03"
+  tag: Website
+  content: "The ECNU Mind Lab homepage has been redesigned into a concise academic format with dedicated pages for publications, people, talks, and software."
+
+- date: "2026/02"
+  tag: Software
+  content: "The lab completed internal presentation versions of the Question Generation and AI Grading software demos."
+
+- date: "2026/01"
+  tag: Recruitment
+  content: "Recruitment information for student researchers and software collaborators is now organized through the homepage introduction and project pages."
+
+- date: "2025/12"
+  tag: Talk
+  content: "Recent invited talks and seminar records will be maintained on the dedicated Talks page linked from the main navigation."
+
+- date: "2025/11"
+  tag: Publication
+  content: "The publications page is now prepared to host a searchable list of all papers and richer bibliography details."

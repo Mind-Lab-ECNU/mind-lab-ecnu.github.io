@@ -1,0 +1,93 @@
+---
+layout: default
+permalink: /
+description: "ECNU Mind Lab homepage featuring lab overview, research focus, news, and selected publications."
+extra_js: /assets/js/site-pages.js
+---
+
+<section class="section">
+  <div class="landing-layout">
+    <div data-reveal>
+      <h1 class="landing-title">ECNU Mind Lab</h1>
+
+      <div class="content-block">
+        <h2>About Us</h2>
+        <p>
+          ECNU Mind Lab is an interdisciplinary research group working at the intersection of artificial
+          intelligence, education, cognition, and human-centered computing. We build practical research systems,
+          design interactive tools for learning, and study how intelligent methods can be translated into real
+          educational and social impact.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h2>Research Focus</h2>
+        <ul class="focus-list">
+          <li><strong>Educational AI:</strong> question generation, automated assessment, and curriculum-aware interactive systems.</li>
+          <li><strong>Human-Centered Intelligence:</strong> interfaces and workflows that connect model capabilities with real users.</li>
+          <li><strong>Cognitive and Multimodal Computing:</strong> structured reasoning, multimodal analysis, and interpretable decision support.</li>
+          <li><strong>Research Software Prototyping:</strong> deployable systems for demonstrations, pilots, and collaborative experimentation.</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h2>Join Us</h2>
+        <p>
+          We welcome students, research assistants, and collaborators who are interested in educational AI,
+          multimodal systems, and interactive research platforms. If you would like to work on software demos,
+          publications, or prototype deployment, please contact the lab and introduce your background and interests.
+        </p>
+      </div>
+    </div>
+
+    <figure class="family-panel" data-reveal>
+      <img src="{{ '/assets/images/booth-main.svg' | relative_url }}" alt="ECNU Mind Lab placeholder image" />
+      <figcaption>ECNU Mind Lab team image placeholder</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" data-reveal>
+  <h2 class="simple-section-title">News</h2>
+  <div class="news-box">
+    {% for item in site.data.news %}
+    <article class="news-entry">
+      <div class="news-date">{{ item.date }}</div>
+      <div class="news-content">
+        <span class="news-tag">{{ item.tag }}</span>
+        <p>{{ item.content }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" data-reveal>
+  <h2 class="simple-section-title">Selected Publications</h2>
+  <div class="publication-list">
+    {% for pub in site.data.publications %}
+    {% if pub.featured %}
+    <article class="publication-card">
+      <div class="publication-media">
+        <img src="{{ pub.image | relative_url }}" alt="Publication figure for {{ pub.title }}" />
+      </div>
+      <div>
+        <h3 class="publication-title">{{ pub.title }}</h3>
+        <p class="publication-authors">{{ pub.authors }}</p>
+        <p class="publication-venue">{{ pub.venue }}</p>
+        <div class="publication-actions">
+          <a class="pub-action" href="{{ pub.arxiv }}" target="_blank" rel="noreferrer">ARXIV</a>
+          <button class="pub-action pub-bib-toggle" type="button" aria-expanded="false">BIB</button>
+        </div>
+        <div class="pub-bib-panel">
+          <pre>{{ pub.bib }}</pre>
+          <div class="pub-bib-footer">
+            <a class="pub-action" href="{{ pub.github }}" target="_blank" rel="noreferrer">GitHub Page</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
