@@ -1,4 +1,4 @@
-﻿- title: 智能题目生成
+- title: 智能题目生成
   description: "面向数学教学场景的题目生成演示，支持通过实验室后端代理接口按参数生成题目。"
   url: "/projects/question-generator.html?task=generate"
   button: 进入演示
