@@ -858,8 +858,8 @@ body.menu-open {
 .content-block li,
 .page-subtitle {
   color: var(--muted);
-  line-height: 1.8;
-  font-size: 1.02rem;
+  line-height: 1.92;
+  font-size: clamp(1.08rem, 1rem + 0.3vw, 1.18rem);
 }
 
 .focus-list {
@@ -928,12 +928,13 @@ body.menu-open {
 .news-date {
   color: var(--text);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.22rem;
 }
 
 .news-content p {
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.9;
+  font-size: clamp(1.06rem, 0.98rem + 0.24vw, 1.14rem);
 }
 
 .news-tag {
@@ -941,11 +942,11 @@ body.menu-open {
   align-items: center;
   margin-right: 10px;
   margin-bottom: 8px;
-  padding: 4px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
   background: rgba(126, 227, 205, 0.12);
   color: var(--accent-deep);
-  font-size: 0.88rem;
+  font-size: 0.96rem;
   font-weight: 700;
 }
 
