@@ -19,7 +19,7 @@ description: "Talks and seminar records at ECNU Mind Lab."
     <div class="talk-list">
       {% for talk in site.data.talks.upcoming %}
       <article class="talk-card">
-        <img src="{{ talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" />
+        <img class="talk-poster-trigger" src="{{ talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
         <div>
           <div class="talk-title">{{ talk.title }}</div>
           <p class="talk-speaker">{{ talk.speaker }}</p>
@@ -42,7 +42,7 @@ description: "Talks and seminar records at ECNU Mind Lab."
     <div class="talk-list">
       {% for talk in site.data.talks.past %}
       <article class="talk-card">
-        <img src="{{ talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" />
+        <img class="talk-poster-trigger" src="{{ talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
         <div>
           <div class="talk-title">{{ talk.title }}</div>
           <p class="talk-speaker">{{ talk.speaker }}</p>
@@ -59,3 +59,11 @@ description: "Talks and seminar records at ECNU Mind Lab."
     </div>
   </section>
 </section>
+
+<div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+  <button class="image-lightbox-close" id="image-lightbox-close" type="button" aria-label="Close image preview">x</button>
+  <div class="image-lightbox-stage">
+    <img id="image-lightbox-image" src="" alt="" />
+    <p id="image-lightbox-caption"></p>
+  </div>
+</div>
