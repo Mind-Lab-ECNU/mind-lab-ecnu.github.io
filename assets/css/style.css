@@ -1144,9 +1144,9 @@ body.menu-open {
 
 .talk-card {
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: 180px 1fr;
   gap: 24px;
-  align-items: stretch;
+  align-items: start;
   padding: 24px;
   border-radius: 28px;
   background: var(--panel);
@@ -1155,9 +1155,8 @@ body.menu-open {
 }
 
 .talk-card img {
-  width: 230px;
-  height: 100%;
-  min-height: 100%;
+  width: 180px;
+  height: 320px;
   object-fit: cover;
   object-position: top center;
   border-radius: 18px;
