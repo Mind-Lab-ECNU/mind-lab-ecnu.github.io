@@ -1,20 +1,11 @@
-upcoming: []
+upcoming:
+  - title: "迈向个性化智能体"
+    speaker: "代忠祥"
+    affiliation: "香港中文大学（深圳）数据科学学院助理教授、博士生导师"
+    date: "2026年4月2日（周四）13:00-15:00 · 文科大楼914 / 腾讯会议 499-988-397"
+    host: "张敏"
+    abstract: "本次报告将围绕个性化智能体的构建展开，介绍从单一模型偏好对齐到动态推理工作流，再到多智能体协同优化的研究脉络，涵盖免参数微调的个性化反馈、面向复杂任务的动态工作流以及基于图神经网络与多臂老虎机的协同优化方法。"
+    image: assets/images/talk-2026-04-02-daizhongxiang-placeholder.svg
+    homepage: https://daizhongxiang.github.io/
 
-past:
-  - title: "Spatial Intelligence in Vision-Language Models: What It Is, What Works, and What Comes Next"
-    speaker: "Disheng Liu, PhD Candidate"
-    affiliation: "Case Western Reserve University"
-    date: "December 30, 2025 · 11:00–12:00 · Online Seminar"
-    host: "Huan Wang"
-    abstract: "This talk introduced a systematic overview of spatial intelligence in vision-language models, discussing limitations, evaluation protocols, and opportunities for embodied and educational scenarios."
-    image: assets/images/person-placeholder.svg
-    homepage: https://example.com
-
-  - title: "Pursuing the Nature of Intelligence"
-    speaker: "Yi Ma, Chair Professor"
-    affiliation: "School of Data Science, Hong Kong University"
-    date: "October 14, 2025 · 15:30–17:00 · ECNU Campus Seminar"
-    host: "Huan Wang, Yandong Wen"
-    abstract: "The talk explored multiple levels and mechanisms of intelligence from scientific, mathematical, and computational perspectives, connecting foundational theory with future AI systems research."
-    image: assets/images/person-placeholder.svg
-    homepage: https://example.com
+past: []

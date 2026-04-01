@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="880" viewBox="0 0 720 880" fill="none">
+  <rect width="720" height="880" fill="#f4f6f8"/>
+  <rect x="36" y="36" width="648" height="808" rx="28" stroke="#c8d1da" stroke-width="4" stroke-dasharray="14 14"/>
+  <circle cx="360" cy="320" r="138" fill="#e5e7eb"/>
+  <text x="84" y="132" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Talk Speaker Placeholder</text>
+  <text x="84" y="594" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">talk-2026-04-02-daizhongxiang-placeholder</text>
+  <text x="84" y="648" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="24">Replace this image with the speaker portrait or poster image.</text>
+</svg>

@@ -1,79 +1,47 @@
-- title: "Competency-Aware Question Generation for Mathematics Learning Workflows"
-  authors: "Y. Liu, Z. Chen, H. Wang, and the ECNU Mind Lab Team"
-  venue: "Under review for an educational technology venue · arXiv preprint"
-  image: assets/images/paper-placeholder.svg
-  search: "question generation mathematics learning educational ai liu chen wang arxiv"
+- title: "Double Correction Framework for Denoising Recommendation"
+  authors: "Zhuangzhuang He, Yifan Wang, Yonghui Yang, Peijie Sun, Le Wu, Haoyue Bai, Jinqi Gong, Richang Hong, Min Zhang"
+  venue: "KDD 2024 · cited 28 times in a Liner Scholar snapshot"
+  image: assets/images/publication-min-zhang-2024-dcf-placeholder.svg
+  search: "double correction framework denoising recommendation min zhang kdd 2024 dcf recommender cited 28"
   featured: true
-  arxiv: https://arxiv.org
-  github: https://github.com
+  arxiv: https://arxiv.org/abs/2405.19294
+  github: https://github.com/HKUDS/DCF
   bib: |
-    @article{liu2026questiongen,
-      title   = {Competency-Aware Question Generation for Mathematics Learning Workflows},
-      author  = {Liu, Y. and Chen, Z. and Wang, H.},
-      journal = {arXiv preprint arXiv:xxxx.xxxxx},
-      year    = {2026}
+    @inproceedings{he2024double,
+      title     = {Double Correction Framework for Denoising Recommendation},
+      author    = {He, Zhuangzhuang and Wang, Yifan and Yang, Yonghui and Sun, Peijie and Wu, Le and Bai, Haoyue and Gong, Jinqi and Hong, Richang and Zhang, Min},
+      booktitle = {Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+      year      = {2024}
     }
 
-- title: "Multimodal AI Grading for Image-Based Student Responses"
-  authors: "X. Lin, S. Xu, C. Yang, H. Wang"
-  venue: "Submitted to a learning analytics venue · arXiv preprint"
-  image: assets/images/paper-placeholder.svg
-  search: "ai grading multimodal assessment lin xu yang wang arxiv"
+- title: "Learning to Reweight for Generalizable Graph Neural Network"
+  authors: "Zhengyu Chen, Teng Xiao, Kun Kuang, Zheqi Lv, Min Zhang, Jinluan Yang, Chengqiang Lu, Hongxia Yang, Fei Wu"
+  venue: "AAAI 2024 · cited 17 times in a Liner Scholar snapshot"
+  image: assets/images/publication-min-zhang-2024-l2rgnn-placeholder.svg
+  search: "learning to reweight graph neural network min zhang aaai 2024 l2r gnn cited 17"
   featured: true
-  arxiv: https://arxiv.org
-  github: https://github.com
+  arxiv: https://arxiv.org/abs/2312.12475
+  github: https://github.com/Zhzy95/L2R-GNN
   bib: |
-    @article{lin2026aigrading,
-      title   = {Multimodal AI Grading for Image-Based Student Responses},
-      author  = {Lin, X. and Xu, S. and Yang, C. and Wang, H.},
-      journal = {arXiv preprint arXiv:xxxx.xxxxx},
-      year    = {2026}
+    @inproceedings{chen2024learning,
+      title     = {Learning to Reweight for Generalizable Graph Neural Network},
+      author    = {Chen, Zhengyu and Xiao, Teng and Kuang, Kun and Lv, Zheqi and Zhang, Min and Yang, Jinluan and Lu, Chengqiang and Yang, Hongxia and Wu, Fei},
+      booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+      year      = {2024}
     }
 
-- title: "Designing Research Software Interfaces for Academic Demonstration and Deployment"
-  authors: "J. Zhao, Y. Li, H. Wang"
-  venue: "Target journal: International Journal of Human-Computer Studies"
-  image: assets/images/paper-placeholder.svg
-  search: "human centered research software interfaces zhao li wang deployment"
+- title: "MetaCoCo: A New Few-Shot Classification Benchmark with Spurious Correlation"
+  authors: "Min Zhang, Haoxuan Li, Fei Wu, Kun Kuang"
+  venue: "ICLR 2024 · cited 15 times in a Liner Scholar snapshot"
+  image: assets/images/publication-min-zhang-2024-metacoco-placeholder.svg
+  search: "metacoco min zhang few-shot classification spurious correlation iclr 2024 cited 15"
   featured: true
-  arxiv: https://arxiv.org
-  github: https://github.com
+  arxiv: https://arxiv.org/abs/2404.19644
+  github: https://github.com/remiMZ/MetaCoCo-ICLR24
   bib: |
-    @article{zhao2026researchsoftware,
-      title   = {Designing Research Software Interfaces for Academic Demonstration and Deployment},
-      author  = {Zhao, J. and Li, Y. and Wang, H.},
-      journal = {Preprint},
-      year    = {2026}
-    }
-
-- title: "Structured Language Models for Moral Education Scenario Understanding"
-  authors: "M. Chen, Y. Liu, H. Wang"
-  venue: "Working paper · arXiv draft in preparation"
-  image: assets/images/paper-placeholder.svg
-  search: "moral education model language alignment policy education chen liu"
-  featured: false
-  arxiv: https://arxiv.org
-  github: https://github.com
-  bib: |
-    @article{chen2026moraled,
-      title   = {Structured Language Models for Moral Education Scenario Understanding},
-      author  = {Chen, M. and Liu, Y. and Wang, H.},
-      journal = {Working paper},
-      year    = {2026}
-    }
-
-- title: "OCR Handwriting Recognition for Educational Documents and Student Writing"
-  authors: "Q. Zhang, S. Xu, H. Wang"
-  venue: "Preprint for document intelligence and educational computing"
-  image: assets/images/paper-placeholder.svg
-  search: "ocr handwriting recognition multimodal document understanding zhang xu"
-  featured: false
-  arxiv: https://arxiv.org
-  github: https://github.com
-  bib: |
-    @article{zhang2026ocrhandwriting,
-      title   = {OCR Handwriting Recognition for Educational Documents and Student Writing},
-      author  = {Zhang, Q. and Xu, S. and Wang, H.},
-      journal = {Preprint},
-      year    = {2026}
+    @inproceedings{zhang2024metacoco,
+      title     = {MetaCoCo: A New Few-Shot Classification Benchmark with Spurious Correlation},
+      author    = {Zhang, Min and Li, Haoxuan and Wu, Fei and Kuang, Kun},
+      booktitle = {International Conference on Learning Representations},
+      year      = {2024}
     }
