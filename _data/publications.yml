@@ -1,47 +1,67 @@
-- title: "Double Correction Framework for Denoising Recommendation"
-  authors: "Zhuangzhuang He, Yifan Wang, Yonghui Yang, Peijie Sun, Le Wu, Haoyue Bai, Jinqi Gong, Richang Hong, Min Zhang"
-  venue: "KDD 2024 · cited 28 times in a Liner Scholar snapshot"
-  image: assets/images/publication-min-zhang-2024-dcf-placeholder.svg
-  search: "double correction framework denoising recommendation min zhang kdd 2024 dcf recommender cited 28"
+- title: "Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference"
+  authors: "Han Zhao, Min Zhang, Wei Zhao, Pengxiang Ding, Siteng Huang, Donglin Wang"
+  venue: "AAAI 2025 · arXiv:2403.14520 · Cited by 138"
+  image: assets/images/papers/zm-cobra.png
+  search: "cobra extending mamba multi-modal large language model efficient inference han zhao min zhang wei zhao pengxiang ding siteng huang donglin wang aaai 2025 arxiv 2403.14520 cited 138"
   featured: true
-  arxiv: https://arxiv.org/abs/2405.19294
-  github: https://github.com/HKUDS/DCF
+  arxiv: https://arxiv.org/abs/2403.14520
+  github: ""
   bib: |
-    @inproceedings{he2024double,
-      title     = {Double Correction Framework for Denoising Recommendation},
-      author    = {He, Zhuangzhuang and Wang, Yifan and Yang, Yonghui and Sun, Peijie and Wu, Le and Bai, Haoyue and Gong, Jinqi and Hong, Richang and Zhang, Min},
-      booktitle = {Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+    @article{zhao2024cobra,
+      title   = {Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference},
+      author  = {Zhao, Han and Zhang, Min and Zhao, Wei and Ding, Pengxiang and Huang, Siteng and Wang, Donglin},
+      journal = {arXiv preprint arXiv:2403.14520},
+      year    = {2024}
+    }
+
+- title: "Prompt-based Distribution Alignment for Unsupervised Domain Adaptation"
+  authors: "Shuanghao Bai, Min Zhang, Wanqi Zhou, Siteng Huang, Zhirong Luan, Donglin Wang, Badong Chen"
+  venue: "arXiv:2312.09553 · Cited by 127"
+  image: assets/images/papers/zm-pda.png
+  search: "prompt based distribution alignment unsupervised domain adaptation shuanghao bai min zhang wanqi zhou siteng huang zhirong luan donglin wang badong chen arxiv 2312.09553 cited 127"
+  featured: true
+  arxiv: https://arxiv.org/abs/2312.09553
+  github: ""
+  bib: |
+    @article{bai2023prompt,
+      title   = {Prompt-based Distribution Alignment for Unsupervised Domain Adaptation},
+      author  = {Bai, Shuanghao and Zhang, Min and Zhou, Wanqi and Huang, Siteng and Luan, Zhirong and Wang, Donglin and Chen, Badong},
+      journal = {arXiv preprint arXiv:2312.09553},
+      year    = {2023}
+    }
+
+- title: "Troika: Multi-path Cross-modal Traction for Compositional Zero-shot Learning"
+  authors: "Siteng Huang, Biao Gong, Yutong Feng, Min Zhang, Yiliang Lv, Donglin Wang"
+  venue: "CVPR 2024 · arXiv:2303.15230 · Cited by 67"
+  image: assets/images/papers/zm-troika.png
+  search: "troika multi path cross modal traction compositional zero-shot learning siteng huang biao gong yutong feng min zhang yiliang lv donglin wang cvpr 2024 arxiv 2303.15230 cited 67"
+  featured: true
+  arxiv: https://arxiv.org/abs/2303.15230
+  github: ""
+  bib: |
+    @inproceedings{huang2024troika,
+      title     = {Troika: Multi-path Cross-modal Traction for Compositional Zero-shot Learning},
+      author    = {Huang, Siteng and Gong, Biao and Feng, Yutong and Zhang, Min and Lv, Yiliang and Wang, Donglin},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
       year      = {2024}
     }
 
-- title: "Learning to Reweight for Generalizable Graph Neural Network"
-  authors: "Zhengyu Chen, Teng Xiao, Kun Kuang, Zheqi Lv, Min Zhang, Jinluan Yang, Chengqiang Lu, Hongxia Yang, Fei Wu"
-  venue: "AAAI 2024 · cited 17 times in a Liner Scholar snapshot"
-  image: assets/images/publication-min-zhang-2024-l2rgnn-placeholder.svg
-  search: "learning to reweight graph neural network min zhang aaai 2024 l2r gnn cited 17"
+- title: "Tensor Deep Learning Model for Heterogeneous Data Fusion in Internet of Things"
+  authors: "Wei Wang, Min Zhang"
+  venue: "IEEE Transactions on Emerging Topics in Computational Intelligence, 2018 · Cited by 56"
+  image: assets/images/papers/zm-tdl.png
+  search: "tensor deep learning model heterogeneous data fusion internet of things wei wang min zhang ieee transactions on emerging topics in computational intelligence 2018 cited 56"
   featured: true
-  arxiv: https://arxiv.org/abs/2312.12475
-  github: https://github.com/Zhzy95/L2R-GNN
+  arxiv: ""
+  github: ""
   bib: |
-    @inproceedings{chen2024learning,
-      title     = {Learning to Reweight for Generalizable Graph Neural Network},
-      author    = {Chen, Zhengyu and Xiao, Teng and Kuang, Kun and Lv, Zheqi and Zhang, Min and Yang, Jinluan and Lu, Chengqiang and Yang, Hongxia and Wu, Fei},
-      booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-      year      = {2024}
-    }
-
-- title: "MetaCoCo: A New Few-Shot Classification Benchmark with Spurious Correlation"
-  authors: "Min Zhang, Haoxuan Li, Fei Wu, Kun Kuang"
-  venue: "ICLR 2024 · cited 15 times in a Liner Scholar snapshot"
-  image: assets/images/publication-min-zhang-2024-metacoco-placeholder.svg
-  search: "metacoco min zhang few-shot classification spurious correlation iclr 2024 cited 15"
-  featured: true
-  arxiv: https://arxiv.org/abs/2404.19644
-  github: https://github.com/remiMZ/MetaCoCo-ICLR24
-  bib: |
-    @inproceedings{zhang2024metacoco,
-      title     = {MetaCoCo: A New Few-Shot Classification Benchmark with Spurious Correlation},
-      author    = {Zhang, Min and Li, Haoxuan and Wu, Fei and Kuang, Kun},
-      booktitle = {International Conference on Learning Representations},
-      year      = {2024}
+    @article{wang2018tensor,
+      title   = {Tensor Deep Learning Model for Heterogeneous Data Fusion in Internet of Things},
+      author  = {Wang, Wei and Zhang, Min},
+      journal = {IEEE Transactions on Emerging Topics in Computational Intelligence},
+      volume  = {4},
+      number  = {1},
+      pages   = {32--41},
+      year    = {2018},
+      publisher = {IEEE}
     }

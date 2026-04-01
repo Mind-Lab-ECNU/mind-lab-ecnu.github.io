@@ -76,14 +76,18 @@ extra_js: /assets/js/site-pages.js
         <p class="publication-authors">{{ pub.authors }}</p>
         <p class="publication-venue">{{ pub.venue }}</p>
         <div class="publication-actions">
+          {% if pub.arxiv and pub.arxiv != "" %}
           <a class="pub-action" href="{{ pub.arxiv }}" target="_blank" rel="noreferrer">ARXIV</a>
+          {% endif %}
           <button class="pub-action pub-bib-toggle" type="button" aria-expanded="false">BIB</button>
         </div>
         <div class="pub-bib-panel">
           <pre>{{ pub.bib }}</pre>
+          {% if pub.github and pub.github != "" %}
           <div class="pub-bib-footer">
             <a class="pub-action" href="{{ pub.github }}" target="_blank" rel="noreferrer">GitHub Page</a>
           </div>
+          {% endif %}
         </div>
       </div>
     </article>
