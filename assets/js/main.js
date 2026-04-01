@@ -42,9 +42,10 @@ const lightbox = document.getElementById('image-lightbox');
 const lightboxImage = document.getElementById('image-lightbox-image');
 const lightboxCaption = document.getElementById('image-lightbox-caption');
 const lightboxClose = document.getElementById('image-lightbox-close');
+const lightboxLink = document.getElementById('image-lightbox-link');
 const talkPosterTriggers = document.querySelectorAll('.talk-poster-trigger');
 
-if (lightbox && lightboxImage && lightboxCaption && lightboxClose && talkPosterTriggers.length > 0) {
+if (lightbox && lightboxImage && lightboxCaption && lightboxClose && lightboxLink && talkPosterTriggers.length > 0) {
   const closeLightbox = () => {
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
@@ -52,6 +53,7 @@ if (lightbox && lightboxImage && lightboxCaption && lightboxClose && talkPosterT
     lightboxImage.src = '';
     lightboxImage.alt = '';
     lightboxCaption.textContent = '';
+    lightboxLink.href = '#';
   };
 
   talkPosterTriggers.forEach((trigger) => {
@@ -62,6 +64,7 @@ if (lightbox && lightboxImage && lightboxCaption && lightboxClose && talkPosterT
       lightboxImage.src = imageUrl;
       lightboxImage.alt = imageTitle;
       lightboxCaption.textContent = imageTitle;
+      lightboxLink.href = imageUrl;
       lightbox.classList.add('open');
       lightbox.setAttribute('aria-hidden', 'false');
       document.body.classList.add('menu-open');
