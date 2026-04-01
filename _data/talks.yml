@@ -5,6 +5,7 @@ upcoming:
     date: "2026年4月2日（周四）13:00-15:00 · 文科大楼914 / 腾讯会议 499-988-397"
     host: "张敏"
     abstract: "本次报告将围绕个性化智能体的构建展开，介绍从单一模型偏好对齐到动态推理工作流，再到多智能体协同优化的研究脉络，涵盖免参数微调的个性化反馈、面向复杂任务的动态工作流以及基于图神经网络与多臂老虎机的协同优化方法。"
+    thumbnail: assets/images/talks/2026.4.2-thumb.jpg
     image: assets/images/talks/2026.4.2.png
     homepage: https://daizhongxiang.github.io/
 

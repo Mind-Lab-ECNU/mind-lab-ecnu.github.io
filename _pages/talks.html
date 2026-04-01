@@ -19,7 +19,7 @@ description: "Talks and seminar records at ECNU Mind Lab."
     <div class="talk-list">
       {% for talk in site.data.talks.upcoming %}
       <article class="talk-card">
-        <img class="talk-poster-trigger" src="{{ talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
+        <img class="talk-poster-trigger" src="{{ talk.thumbnail | default: talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
         <div>
           <div class="talk-title">{{ talk.title }}</div>
           <p class="talk-speaker">{{ talk.speaker }}</p>
@@ -42,7 +42,7 @@ description: "Talks and seminar records at ECNU Mind Lab."
     <div class="talk-list">
       {% for talk in site.data.talks.past %}
       <article class="talk-card">
-        <img class="talk-poster-trigger" src="{{ talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
+        <img class="talk-poster-trigger" src="{{ talk.thumbnail | default: talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
         <div>
           <div class="talk-title">{{ talk.title }}</div>
           <p class="talk-speaker">{{ talk.speaker }}</p>
