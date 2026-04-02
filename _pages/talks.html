@@ -6,6 +6,20 @@ description: "Talks and seminar records at ECNU Mind Lab."
 ---
 
 <section class="section">
+  {% assign now_ts = "now" | date: "%s" %}
+  {% assign all_talks = site.data.talks.upcoming | concat: site.data.talks.past %}
+  {% assign upcoming_count = 0 %}
+  {% assign past_count = 0 %}
+
+  {% for talk in all_talks %}
+    {% assign start_ts = talk.start_time | default: talk.date | date: "%s" %}
+    {% if start_ts > now_ts %}
+      {% assign upcoming_count = upcoming_count | plus: 1 %}
+    {% else %}
+      {% assign past_count = past_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
   <div class="page-header-block" data-reveal>
     <h1 class="page-title">Talks</h1>
     <p class="page-subtitle">Invited talks, seminars, and internal lecture records at ECNU Mind Lab.</p>
@@ -13,11 +27,14 @@ description: "Talks and seminar records at ECNU Mind Lab."
 
   <section class="person-section" data-reveal>
     <h2 class="person-section-title">Upcoming Talks</h2>
-    {% if site.data.talks.upcoming.size == 0 %}
+    {% if upcoming_count == 0 %}
     <p class="page-subtitle">No upcoming talks scheduled. Stay tuned.</p>
     {% else %}
+    {% assign sorted_talks = all_talks | sort: "start_time" %}
     <div class="talk-list">
-      {% for talk in site.data.talks.upcoming %}
+      {% for talk in sorted_talks %}
+      {% assign start_ts = talk.start_time | default: talk.date | date: "%s" %}
+      {% if start_ts > now_ts %}
       <article class="talk-card">
         <img class="talk-poster-trigger" src="{{ talk.thumbnail | default: talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
         <div>
@@ -32,6 +49,7 @@ description: "Talks and seminar records at ECNU Mind Lab."
           </div>
         </div>
       </article>
+      {% endif %}
       {% endfor %}
     </div>
     {% endif %}
@@ -39,8 +57,14 @@ description: "Talks and seminar records at ECNU Mind Lab."
 
   <section class="person-section" data-reveal>
     <h2 class="person-section-title">Past Talks</h2>
+    {% if past_count == 0 %}
+    <p class="page-subtitle">No past talks available yet.</p>
+    {% else %}
+    {% assign sorted_talks = all_talks | sort: "start_time" | reverse %}
     <div class="talk-list">
-      {% for talk in site.data.talks.past %}
+      {% for talk in sorted_talks %}
+      {% assign start_ts = talk.start_time | default: talk.date | date: "%s" %}
+      {% unless start_ts > now_ts %}
       <article class="talk-card">
         <img class="talk-poster-trigger" src="{{ talk.thumbnail | default: talk.image | relative_url }}" alt="{{ talk.speaker }} portrait" data-full-image="{{ talk.image | relative_url }}" data-full-title="{{ talk.title }}" />
         <div>
@@ -55,8 +79,10 @@ description: "Talks and seminar records at ECNU Mind Lab."
           </div>
         </div>
       </article>
+      {% endunless %}
       {% endfor %}
     </div>
+    {% endif %}
   </section>
 </section>
 
