@@ -29,7 +29,7 @@ master_students:
   - name: Zipeng Wang
     role: "Master's Student"
     meta: "Master's student at East China Normal University."
-    image: assets/images/person-placeholder.svg
+    image: assets/images/people/master-wzp.jpg
     links:
       - label: Email
         url: "mailto:TFire26138@163.com"
