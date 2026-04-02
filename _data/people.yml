@@ -1,71 +1,43 @@
-principal_investigator:
-  - name: Huan Wang
-    role: "Principal Investigator · Assistant Professor"
+supervisors:
+  - name: Min Zhang
+    role: "Assistant Professor"
     affiliation: "School of Computer Science and Engineering, East China Normal University"
-    note: "Research interests include educational AI, multimodal intelligence, interactive systems, and research software for real-world deployment."
+    note: "Min Zhang is an Assistant Professor at East China Normal University, specializing in causal machine learning, multimodal large models, intelligent education, and large language models. She has published more than 30 papers at premier conferences including ICML, NeurIPS, and ICLR, serves as a reviewer for top-tier venues, and has organized multiple international workshops. During her Ph.D. studies, she received honors including Outstanding Graduate, the National Scholarship, and the Zhejiang University \"Merit Student\" award."
+    image: assets/images/people/supervisor-zm.jpg
+    links:
+      - label: Homepage
+        url: https://scholar.google.com/citations?user=5dlWxdUAAAAJ&hl=zh-CN
+        target: _blank
+      - label: Email
+        url: "mailto:mzhang@cs.ecnu.edu.cn"
+
+master_students:
+  - name: Yingying Guo
+    role: "Master's Student"
+    meta: "Undergraduate alumna of East China Normal University and current master's student."
     image: assets/images/person-placeholder.svg
     links:
       - label: Homepage
-        url: https://example.com
+        url: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=nB9Sg58AAAAJ
         target: _blank
       - label: Email
-        url: "mailto:mindlab@placeholder.edu"
+        url: "mailto:709898553@qq.com"
       - label: GitHub
-        url: https://github.com
+        url: https://github.com/sanlongganlu
         target: _blank
 
-staff:
-  - name: Xinjun Lin
-    role: Administrative Assistant
-    meta: "Lab operations, coordination, scheduling, and external communication."
+  - name: Zipeng Wang
+    role: "Master's Student"
+    meta: "Master's student at East China Normal University."
     image: assets/images/person-placeholder.svg
     links:
       - label: Email
-        url: "mailto:mindlab@placeholder.edu"
+        url: "mailto:TFire26138@163.com"
 
-  - name: Ying Li
-    role: Postdoctoral Researcher
-    meta: "Focus: educational assessment systems, multimodal evaluation, and prototype deployment."
-    image: assets/images/person-placeholder.svg
-    links:
-      - label: Homepage
-        url: https://example.com
-        target: _blank
-      - label: Email
-        url: "mailto:mindlab@placeholder.edu"
-
-  - name: Simin Xu
-    role: Postdoctoral Researcher
-    meta: "Focus: multimodal educational AI, student response understanding, and interactive evaluation tools."
-    image: assets/images/person-placeholder.svg
+  - name: Bolin Jin
+    role: "Master's Student"
+    meta: "Master's student at East China Normal University."
+    image: assets/images/people/master-jbl.jpg
     links:
       - label: Email
-        url: "mailto:mindlab@placeholder.edu"
-      - label: GitHub
-        url: https://github.com
-        target: _blank
-
-phd_students:
-  - name: Kele Shao
-    role: PhD Student
-    meta: "Focus: question generation and curriculum-aware educational agents."
-    image: assets/images/person-placeholder.svg
-    links:
-      - label: Email
-        url: "mailto:mindlab@placeholder.edu"
-
-  - name: Keda Tao
-    role: PhD Student
-    meta: "Focus: interactive grading pipelines, structured response analysis, and feedback design."
-    image: assets/images/person-placeholder.svg
-    links:
-      - label: Email
-        url: "mailto:mindlab@placeholder.edu"
-
-  - name: Hesong Wang
-    role: PhD Student
-    meta: "Focus: document intelligence, handwriting recognition, and educational multimodal data processing."
-    image: assets/images/person-placeholder.svg
-    links:
-      - label: Email
-        url: "mailto:mindlab@placeholder.edu"
+        url: "mailto:51285901148@stu.ecnu.edu.cn"
