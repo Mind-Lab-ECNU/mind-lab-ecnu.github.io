@@ -2,7 +2,7 @@ supervisors:
   - name: Min Zhang
     role: "Assistant Professor"
     affiliation: "School of Computer Science and Engineering, East China Normal University"
-    note: "Min Zhang is an Assistant Professor at East China Normal University, specializing in causal machine learning, multimodal large models, intelligent education, and large language models. She has published more than 30 papers at premier conferences including ICML, NeurIPS, and ICLR, serves as a reviewer for top-tier venues, and has organized multiple international workshops. During her Ph.D. studies, she received honors including Outstanding Graduate, the National Scholarship, and the Zhejiang University \"Merit Student\" award."
+    note: "An Assistant Professor at East China Normal University, specializing in causal machine learning, multimodal large models, intelligent education, and large language models. She has published more than 30 papers at premier conferences including ICML, NeurIPS, and ICLR, serves as a reviewer for top-tier venues, and has organized multiple international workshops. During her Ph.D. studies, she received honors including Outstanding Graduate, the National Scholarship, and the Zhejiang University \"Merit Student\" award."
     image: assets/images/people/supervisor-zm.jpg
     links:
       - label: Homepage
