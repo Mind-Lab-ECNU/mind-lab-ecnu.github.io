@@ -15,7 +15,7 @@ master_students:
   - name: Yingying Guo
     role: "Master's Student"
     meta: "Undergraduate alumna of East China Normal University and current master's student."
-    image: assets/images/person-placeholder.svg
+    image: assets/images/people/master-gyy.jpg
     links:
       - label: Homepage
         url: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=nB9Sg58AAAAJ
