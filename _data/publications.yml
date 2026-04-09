@@ -1,3 +1,51 @@
+- title: "Tailoring Diagnostic Modeling to Individual Learners: Personalized Distractor Generation via MCTS-Guided Reasoning Reconstruction"
+  authors: "Tao Wu, Jingyuan Chen, Wang Lin, Jian Zhan, Mengze Li, Fangzhou Jin, Min Zhang, Kun Kuang, Fei Wu"
+  venue: "ACL 2026 Main Conference"
+  image: assets/images/papers/zm-acl2026main-pdg.png
+  search: "tailoring diagnostic modeling individual learners personalized distractor generation mcts-guided reasoning reconstruction tao wu jingyuan chen wang lin jian zhan mengze li fangzhou jin min zhang kun kuang fei wu acl 2026 main"
+  featured: true
+  arxiv: ""
+  github: ""
+  bib: |
+    @inproceedings{wu2026pdg,
+      title     = {Tailoring Diagnostic Modeling to Individual Learners: Personalized Distractor Generation via MCTS-Guided Reasoning Reconstruction},
+      author    = {Wu, Tao and Chen, Jingyuan and Lin, Wang and Zhan, Jian and Li, Mengze and Jin, Fangzhou and Zhang, Min and Kuang, Kun and Wu, Fei},
+      booktitle = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+      year      = {2026}
+    }
+
+- title: "Step-GRPO: Internalizing Dynamic Early Exit for Efficient Reasoning"
+  authors: "Benteng Chen, Weida Wang, Shufei Zhang, Mingbao Lin, Min Zhang"
+  venue: "ACL 2026 Main Conference"
+  image: assets/images/papers/zm-acl2026main-stepgrpo.png
+  search: "step-grpo internalizing dynamic early exit efficient reasoning benteng chen weida wang shufei zhang mingbao lin min zhang acl 2026 main"
+  featured: true
+  arxiv: ""
+  github: ""
+  bib: |
+    @inproceedings{chen2026stepgrpo,
+      title     = {Step-GRPO: Internalizing Dynamic Early Exit for Efficient Reasoning},
+      author    = {Chen, Benteng and Wang, Weida and Zhang, Shufei and Lin, Mingbao and Zhang, Min},
+      booktitle = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+      year      = {2026}
+    }
+
+- title: "Think Faster Than Words: Efficient LLM Chain-of-Thought Reasoning via Dynamic Shortcut Decoding"
+  authors: "Fan Liu, Yanhao Wang, Min Zhang, Zhikang Chen, Zeyuan Li, Lewei He, Jiahui Pan"
+  venue: "ACL 2026 Main Conference"
+  image: assets/images/papers/zm-acl2026main-dsd.png
+  search: "think faster than words efficient llm chain-of-thought reasoning dynamic shortcut decoding fan liu yanhao wang min zhang zhikang chen zeyuan li lewei he jiahui pan acl 2026 main"
+  featured: true
+  arxiv: ""
+  github: ""
+  bib: |
+    @inproceedings{liu2026dsd,
+      title     = {Think Faster Than Words: Efficient LLM Chain-of-Thought Reasoning via Dynamic Shortcut Decoding},
+      author    = {Liu, Fan and Wang, Yanhao and Zhang, Min and Chen, Zhikang and Li, Zeyuan and He, Lewei and Pan, Jiahui},
+      booktitle = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+      year      = {2026}
+    }
+
 - title: "CAST: Context-Aware Dynamic Latent Space Transformation for Interactive Text-to-Image Retrieval"
   authors: "Xuanzuo Lin, Min Zhang, Daizong Liu, Zhiwen Zuo, Xun Yang, Changting Lin, Xun Wang, Jianfeng Dong"
   venue: "CVPR 2026 Main Conference"
@@ -33,7 +81,7 @@
 
 - title: "Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference"
   authors: "Han Zhao, Min Zhang, Wei Zhao, Pengxiang Ding, Siteng Huang, Donglin Wang"
-  venue: "AAAI 2025 · arXiv:2403.14520 · Cited by 138"
+  venue: "AAAI 2025 | arXiv:2403.14520 | Cited by 138"
   image: assets/images/papers/zm-cobra.png
   search: "cobra extending mamba multi-modal large language model efficient inference han zhao min zhang wei zhao pengxiang ding siteng huang donglin wang aaai 2025 arxiv 2403.14520 cited 138"
   featured: true
@@ -49,7 +97,7 @@
 
 - title: "Prompt-based Distribution Alignment for Unsupervised Domain Adaptation"
   authors: "Shuanghao Bai, Min Zhang, Wanqi Zhou, Siteng Huang, Zhirong Luan, Donglin Wang, Badong Chen"
-  venue: "arXiv:2312.09553 · Cited by 127"
+  venue: "arXiv:2312.09553 | Cited by 127"
   image: assets/images/papers/zm-pda.png
   search: "prompt based distribution alignment unsupervised domain adaptation shuanghao bai min zhang wanqi zhou siteng huang zhirong luan donglin wang badong chen arxiv 2312.09553 cited 127"
   featured: true
@@ -65,7 +113,7 @@
 
 - title: "Troika: Multi-path Cross-modal Traction for Compositional Zero-shot Learning"
   authors: "Siteng Huang, Biao Gong, Yutong Feng, Min Zhang, Yiliang Lv, Donglin Wang"
-  venue: "CVPR 2024 · arXiv:2303.15230 · Cited by 67"
+  venue: "CVPR 2024 | arXiv:2303.15230 | Cited by 67"
   image: assets/images/papers/zm-troika.png
   search: "troika multi path cross modal traction compositional zero-shot learning siteng huang biao gong yutong feng min zhang yiliang lv donglin wang cvpr 2024 arxiv 2303.15230 cited 67"
   featured: true
@@ -81,7 +129,7 @@
 
 - title: "Tensor Deep Learning Model for Heterogeneous Data Fusion in Internet of Things"
   authors: "Wei Wang, Min Zhang"
-  venue: "IEEE Transactions on Emerging Topics in Computational Intelligence, 2018 · Cited by 56"
+  venue: "IEEE Transactions on Emerging Topics in Computational Intelligence, 2018 | Cited by 56"
   image: assets/images/papers/zm-tdl.png
   search: "tensor deep learning model heterogeneous data fusion internet of things wei wang min zhang ieee transactions on emerging topics in computational intelligence 2018 cited 56"
   featured: true
