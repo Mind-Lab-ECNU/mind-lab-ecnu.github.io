@@ -66,8 +66,7 @@ extra_js: /assets/js/site-pages.js
 <section class="section" data-reveal>
   <h2 class="simple-section-title">Selected Publications</h2>
   <div class="publication-list">
-    {% for pub in site.data.publications %}
-    {% if pub.featured %}
+    {% for pub in site.data.publications limit: 4 %}
     <article class="publication-card">
       <div class="publication-media">
         <img src="{{ pub.image | relative_url }}" alt="Publication figure for {{ pub.title }}" />
@@ -92,7 +91,6 @@ extra_js: /assets/js/site-pages.js
         </div>
       </div>
     </article>
-    {% endif %}
     {% endfor %}
   </div>
 </section>
