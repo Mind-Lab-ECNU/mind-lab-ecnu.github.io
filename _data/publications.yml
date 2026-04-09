@@ -126,23 +126,3 @@
       booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
       year      = {2024}
     }
-
-- title: "Tensor Deep Learning Model for Heterogeneous Data Fusion in Internet of Things"
-  authors: "Wei Wang, Min Zhang"
-  venue: "IEEE Transactions on Emerging Topics in Computational Intelligence, 2018 | Cited by 56"
-  image: assets/images/papers/zm-tdl.png
-  search: "tensor deep learning model heterogeneous data fusion internet of things wei wang min zhang ieee transactions on emerging topics in computational intelligence 2018 cited 56"
-  featured: true
-  arxiv: ""
-  github: ""
-  bib: |
-    @article{wang2018tensor,
-      title   = {Tensor Deep Learning Model for Heterogeneous Data Fusion in Internet of Things},
-      author  = {Wang, Wei and Zhang, Min},
-      journal = {IEEE Transactions on Emerging Topics in Computational Intelligence},
-      volume  = {4},
-      number  = {1},
-      pages   = {32--41},
-      year    = {2018},
-      publisher = {IEEE}
-    }
