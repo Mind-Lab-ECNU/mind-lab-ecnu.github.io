@@ -64,7 +64,7 @@
 
 - title: "Vision Inference Former: Sustaining Visual Consistency in Multimodal Large Language Models"
   authors: "Xinpeng Dong, Min Zhang, Kairong Han, Xu Tan, Fei Wu, Kun Kuang"
-  venue: "CVPR 2026 Findings (Co-first author)"
+  venue: "CVPR 2026 Findings"
   image: assets/images/papers/zm-cvpr2026findings-vif.png
   search: "vision inference former sustaining visual consistency multimodal large language models xinpeng dong min zhang kairong han xu tan fei wu kun kuang cvpr 2026 findings co-first"
   featured: true
