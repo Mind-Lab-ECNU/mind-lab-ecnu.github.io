@@ -33,7 +33,7 @@
 
 - title: "Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference"
   authors: "Han Zhao, Min Zhang, Wei Zhao, Pengxiang Ding, Siteng Huang, Donglin Wang"
-  venue: "AAAI 2025 路 arXiv:2403.14520 路 Cited by 138"
+  venue: "AAAI 2025 · arXiv:2403.14520 · Cited by 138"
   image: assets/images/papers/zm-cobra.png
   search: "cobra extending mamba multi-modal large language model efficient inference han zhao min zhang wei zhao pengxiang ding siteng huang donglin wang aaai 2025 arxiv 2403.14520 cited 138"
   featured: true
@@ -49,7 +49,7 @@
 
 - title: "Prompt-based Distribution Alignment for Unsupervised Domain Adaptation"
   authors: "Shuanghao Bai, Min Zhang, Wanqi Zhou, Siteng Huang, Zhirong Luan, Donglin Wang, Badong Chen"
-  venue: "arXiv:2312.09553 路 Cited by 127"
+  venue: "arXiv:2312.09553 · Cited by 127"
   image: assets/images/papers/zm-pda.png
   search: "prompt based distribution alignment unsupervised domain adaptation shuanghao bai min zhang wanqi zhou siteng huang zhirong luan donglin wang badong chen arxiv 2312.09553 cited 127"
   featured: true
@@ -65,7 +65,7 @@
 
 - title: "Troika: Multi-path Cross-modal Traction for Compositional Zero-shot Learning"
   authors: "Siteng Huang, Biao Gong, Yutong Feng, Min Zhang, Yiliang Lv, Donglin Wang"
-  venue: "CVPR 2024 路 arXiv:2303.15230 路 Cited by 67"
+  venue: "CVPR 2024 · arXiv:2303.15230 · Cited by 67"
   image: assets/images/papers/zm-troika.png
   search: "troika multi path cross modal traction compositional zero-shot learning siteng huang biao gong yutong feng min zhang yiliang lv donglin wang cvpr 2024 arxiv 2303.15230 cited 67"
   featured: true
@@ -81,7 +81,7 @@
 
 - title: "Tensor Deep Learning Model for Heterogeneous Data Fusion in Internet of Things"
   authors: "Wei Wang, Min Zhang"
-  venue: "IEEE Transactions on Emerging Topics in Computational Intelligence, 2018 路 Cited by 56"
+  venue: "IEEE Transactions on Emerging Topics in Computational Intelligence, 2018 · Cited by 56"
   image: assets/images/papers/zm-tdl.png
   search: "tensor deep learning model heterogeneous data fusion internet of things wei wang min zhang ieee transactions on emerging topics in computational intelligence 2018 cited 56"
   featured: true
